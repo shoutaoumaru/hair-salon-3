@@ -1,0 +1,329 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.c-container {
+  padding: 0 15vw;
+}
+
+.c-txt-lr {
+  font-size: 2rem;
+  letter-spacing: 5px;
+  line-height: 2;
+  color: $cSubBlack;
+  margin-top: 0;
+  font-weight: 100;
+}
+
+.c-txt-md {
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: $cSubBlack;
+  margin: 0;
+}
+
+.c-txt-sm {
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  line-height: 2;
+  color: $cSubBlack;
+}
+
+.c-txt-xs {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: $cSubBlack;
+}
+
+.view-more {
+  & span {
+    font-size: 1.4rem;
+  }
+}
+
+.insta-link {
+  margin-top: 70px;
+
+  & span {
+    padding-left: 40px;
+    padding-right: 25px;
+    font-size: 28px;
+
+    &::before {
+      top: 8px;
+      left: 0;
+      height: 26px;
+      width: 26px;
+    }
+
+    &::after {
+      top: 17px;
+      height: 14px;
+      width: 14px;
+    }
+  }
+}
+
+//.header
+.header {
+
+  & .logo__img {
+    margin-left: 50px;
+  }
+
+  & .logo {
+    height: 80px;
+    width: 160px;
+  }
+
+  & .mobile-button {
+    top: 25px;
+    right: 40px;
+  }
+
+  & .pc-container {
+    position: relative;
+    border-bottom: 1px solid rgb(36, 36, 36);
+    backdrop-filter: blur(3px);
+
+    & .pc-nav-item {
+      padding-top: 2.5vw;
+    }
+
+  }
+}
+
+//.p-firstview
+.p-firstview {
+  & .swiper-container {
+    height: 100vh;
+  }
+}
+
+//.p-gallery 
+.p-gallery {
+  &__item {
+    height: 200px;
+  }
+}
+
+//.p-price
+.p-price {
+  &__section {
+    font-size: 1.1rem;
+  }
+
+  & .right {
+    top: 15vw;
+  }
+}
+
+//.p-staff
+.p-staff {
+  padding: 12vw 0;
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    margin-top: 8vw;
+    width: 40%;
+
+    & img {
+      height: auto;
+    }
+  }
+
+  &__wrap {
+    width: 50%;
+  }
+}
+
+//.p-news
+.p-news {
+  &__link {
+    padding: 4vw;
+    font-size: 1.2rem;
+  }
+
+  & .view-more {
+    &__link {
+      & span {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+//.p-footer
+.p-footer {
+  & .sns-insta {
+    & .sns-link {
+      width: 70px;
+      height: 70px;
+      margin-right: 20px;
+      border-radius: 40px;
+
+      & i {
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+
+  & .sns-fb {
+    & .sns-link {
+      width: 70px;
+      height: 70px;
+      border-radius: 40px;
+
+      & i {
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+
+  & .copyright {
+    font-size: 1.2rem;
+  }
+}
+
+//.p-access
+.p-access {
+  &__g-map {
+    & span {
+      padding-left: 40px;
+
+      &::before {
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+}
+
+//.p-footer
+.p-footer {
+  padding: 7vw 0;
+
+  &__sns {
+    margin-bottom: 7vw;
+  }
+}
+
+//* * * * * * staff-page * * * * * * *
+.c-staff {
+  padding: 10vw 0;
+
+  &__title {
+    & p {
+      margin-top: 7vw;
+      font-size: 1rem;
+    }
+  }
+
+  &__item {
+    width: 30%;
+    margin-bottom: 5vw;
+  }
+
+  &__desc {
+    font-size: .8rem;
+  }
+
+  &__list {
+    margin-top: 5vw;
+  }
+
+  &__name {
+    font-size: 1.2rem;
+  }
+
+  &__desc {
+    font-size: 1rem;
+  }
+}
+
+//* * * * * * recruite-page * * * * * * *
+.c-recruite {
+  padding: 15vw 0 10vw 0;
+
+  &__title {
+    & p {
+      margin-top: 5vw;
+      font-size: 1rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.2rem;
+  }
+
+  &__text {
+    font-size: 1rem;
+  }
+
+  &__btn {
+    display: none;
+  }
+}
+
+//* * * * * * news-page * * * * * * *
+
+.c-news {
+  padding: 20vw 0 10vw 0;
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 6vw;
+  }
+
+  &__list {
+    padding-bottom: 0;
+
+    & a {
+      padding: 4vw 0 4vw 3vw;
+    }
+  }
+}
+
+//* * * * * * news-sl-page * * * * * * *
+.c-news-sl {
+  padding: 10vw 0 0 0;
+
+  & .c-container {
+    padding: 0 12vw;
+  }
+
+  &__tit {
+    & p {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__date {
+    font-size: 1.6rem;
+  }
+
+  &__list {
+    padding: 20vw 0 6vw 0;
+  }
+
+  &__contents {
+    padding: 10vw 0;
+
+    & p {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__link {
+    font-size: 1.4rem;
+  }
+}

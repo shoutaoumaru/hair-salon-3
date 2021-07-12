@@ -1,0 +1,905 @@
+// 設定
+body {
+  margin: 0;
+  color: $cBlack;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.superwrapper {
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $cBlack;
+}
+
+dd {
+  margin-bottom: 0;
+}
+
+.c-container {
+  padding: 0 7vw;
+}
+
+.c-txt-lr {
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  line-height: 2;
+  color: $cSubBlack;
+  margin-top: 0;
+  font-weight: 100;
+}
+
+.c-txt-md {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: $cSubBlack;
+  margin: 0;
+}
+
+.c-txt-sm {
+  font-size: .8rem;
+  letter-spacing: 3px;
+  line-height: 2;
+  color: $cSubBlack;
+}
+
+.c-txt-xs {
+  font-size: .5rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: $cSubBlack;
+}
+
+.c-title {
+  font-weight: 100;
+  letter-spacing: 5px;
+  display: inline-block;
+}
+
+.view-more {
+  margin-top: 10vw;
+  text-align: right;
+
+  & span {
+    display: inline-block;
+    letter-spacing: 3px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(110, 110, 110);
+  }
+}
+
+.icon-tel {
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    background-image: url(/images/common/icon-tel.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 19px;
+    width: 19px;
+  }
+
+}
+
+.icon-map {
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    background-image: url(/images/common/icon-map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 19px;
+    width: 19px;
+  }
+
+}
+
+.icon-net {
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    background-image: url(/images/common/icon-calendar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 19px;
+    width: 19px;
+  }
+
+}
+
+.icon-insta {
+  position: relative;
+  padding-left: 10vw;
+  color: $cBlack;
+  border-bottom: 1px solid $cGray;
+  padding-bottom: 5px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(/images/common/icon-insta-gr.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 19px;
+    width: 19px;
+  }
+}
+
+.insta-link {
+  margin-top: 40px;
+  text-align: right;
+
+  & span {
+    position: relative;
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 15px;
+    border-bottom: 1px solid $cSubBlack;
+    font-size: 16px;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-image: url(/images/common/icon-insta-gr.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 10px;
+      right: 0;
+      height: 8px;
+      width: 8px;
+      background-image: url(/images/common/arrow.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+//ファーストビューセクション
+.p-firstview {
+  position: relative;
+
+  & .swiper-container {
+    height: 91vh;
+
+    @media (max-width:1199px) {
+      .view-pc {
+        display: none;
+      }
+    }
+  }
+}
+
+//.header
+.header {
+  background-color: transparent;
+
+  .mobile-container {
+    height: 50px;
+    backdrop-filter: blur(3px);
+    border-bottom: 1px solid rgb(36, 36, 36);
+  }
+
+  & .sp-navbtn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: .8;
+    height: 9vh;
+    width: 100%;
+    z-index: 2000;
+    transition: all .3s;
+
+    &__container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 60vw;
+      margin: auto;
+
+      & a {
+        display: block;
+      }
+    }
+  }
+
+  @media (min-width:960px) {
+    .sp-navbtn {
+      display: none;
+    }
+  }
+
+  & .hide {
+    &.sp-navbtn {
+      visibility: hidden;
+      transform: translateY(50px);
+      transition: all 0.4s;
+    }
+  }
+}
+
+//コンセプトセクション
+.p-concept {
+  background-color: rgb(250, 250, 250);
+  padding: 20vw 0 10vw 0;
+
+  & .c-txt-md {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    padding-bottom: 10vw;
+  }
+}
+
+// フォトギャラリーセクション
+.p-gallery {
+  background-color: rgb(250, 250, 250);
+  padding: 15vw 0;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 33.3%;
+    height: 100px;
+    border: white 2px solid;
+  }
+}
+
+//スタッフ
+.p-staff {
+  background: #f1efea;
+  padding: 20vw 0;
+
+  &__title {
+    margin: 0 auto 40px;
+    text-align: left;
+  }
+
+  &__img {
+    width: 50%;
+  }
+
+  &__block {
+    margin: 50px 0;
+  }
+
+  & .staff01 {
+    padding-bottom: 50px;
+    border-bottom: solid rgb(214, 210, 210) 1px;
+  }
+
+  &__name {
+    padding-top: 5vw;
+
+    &__ja {
+      margin-bottom: 0;
+    }
+
+    &__en {
+      margin-top: 5px;
+      font-size: 10px;
+    }
+  }
+
+  &__desc {
+    padding-top: 5vw;
+    font-size: 12px;
+
+    &__p {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+//プライスセクション
+.p-price {
+  padding: 20vw 0 45vw 0;
+
+  &__title {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  &__desc {
+    font-size: 12px;
+
+    &__p {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list {
+    padding-top: 15vw;
+    letter-spacing: 1px;
+    max-width: 100%;
+    font-size: .5rem;
+
+    & dl {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 23px;
+      width: 100%;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    & dd,
+    dt {
+      font-size: 0.8em;
+      margin: 0;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 30px;
+    font-size: .9rem;
+
+    & span {
+      font-size: 0.6em;
+    }
+  }
+
+  &__section {
+    margin-bottom: 40px;
+  }
+
+  &__img-wrap {
+    position: relative;
+    padding: 20vw 0 30vw 0;
+  }
+
+  &__img {
+    width: 60%;
+    box-shadow: 15px 25px 45px rgb(206, 206, 206);
+  }
+
+  & .right {
+    position: absolute;
+    top: 2vw;
+    right: 0;
+  }
+
+  & li {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: rgb(100, 98, 98);
+  }
+}
+
+//リクルートセクション
+.p-recruite {
+  background-color: rgb(245, 245, 245);
+  padding: 35vw 0 20vw 0;
+
+  &__title {
+    text-align: left;
+    margin-bottom: 10vw;
+  }
+
+  &__subtitle {
+    font-size: 0.9em;
+    padding-bottom: 10px;
+  }
+}
+
+//アクセスセクション
+.p-access {
+  padding: 20vw 0;
+
+  &__title {
+    padding-bottom: 5vw;
+  }
+
+  &__item {
+    margin-bottom: 5vw;
+
+    & p {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__g-map {
+    text-align: right;
+
+    & span {
+      position: relative;
+      display: inline-block;
+      padding: 0 0 1vw 18px;
+      border-bottom: 1px solid rgb(163, 163, 163);
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 0;
+        display: inline-block;
+        background-image: url(/images/common/icon-map.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 18px;
+        width: 18px;
+      }
+    }
+  }
+
+  &__img {
+    padding-top: 20vw;
+  }
+}
+
+//#news
+.p-news {
+  position: relative;
+  padding: 10vw 0;
+
+  &__tit {
+    margin-bottom: 10vw;
+
+    & p {
+      margin-bottom: -20px;
+      font-weight: 100;
+      letter-spacing: 5px;
+    }
+  }
+
+  &__txt {
+    margin: 5vw 0;
+  }
+
+  &__link {
+    display: block;
+    padding: 5vw 0;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    font-size: .8rem;
+
+    &:first-child {
+      border-top: 1px solid rgb(235, 235, 235);
+    }
+
+    & p {
+      margin-top: 2vw;
+    }
+
+    & span {
+      padding: 3px;
+      border-radius: 5%;
+      background-color: rgb(247, 247, 247);
+    }
+  }
+
+  & .view-more {
+    padding-right: 0;
+    text-align: right;
+    letter-spacing: 2px;
+
+    & span {
+      font-size: .9rem;
+    }
+  }
+
+}
+
+//.p-footer 
+.p-footer {
+  padding: 10vw 0;
+  background-color: rgb(238, 231, 231);
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__item {
+      width: 50%;
+    }
+  }
+
+  & .c-logo {
+    text-align: center;
+
+    & img {
+      width: 25%;
+      height: 35%;
+      object-fit: contain;
+    }
+  }
+
+  &__sns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vw;
+  }
+
+  & .sns-insta {
+    & .sns-link {
+      position: relative;
+      display: block;
+      float: left;
+      width: 44px;
+      height: 44px;
+      margin: 0 5px;
+      background-color: #fff;
+      border-radius: 22px;
+      box-shadow: 0 12px 16px rgb(182, 182, 182);
+      transition: box-shadow 1s;
+
+      & i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        background-image: url(/images/common/icon-insta-gr.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 22px;
+        width: 22px;
+      }
+    }
+
+  }
+
+  & .sns-fb {
+    & .sns-link {
+      position: relative;
+      display: block;
+      float: left;
+      width: 44px;
+      height: 44px;
+      margin: 0 5px;
+      background-color: #fff;
+      border-radius: 22px;
+      box-shadow: 0 12px 16px rgb(182, 182, 182);
+      transition: box-shadow 1s;
+
+      & i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        background-image: url(/images/common/facebook-ico.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 22px;
+        width: 22px;
+      }
+    }
+
+  }
+
+  & .copyright {
+    text-align: center;
+    margin-top: 5vw;
+    font-size: .8rem;
+  }
+}
+
+//* * * * * * * * * staff-page * * * * * * * * * * 
+.c-staff {
+  padding: 15vw 0;
+  letter-spacing: 3px;
+  line-height: 2;
+
+  &__title {
+    & span {
+      padding-top: 8vw;
+      text-align: center;
+      font-weight: 100;
+      font-size: 2rem;
+      display: block;
+    }
+
+    & p {
+      margin-top: 10vw;
+      font-size: .5rem;
+      line-height: 2;
+    }
+
+  }
+
+  &__img {
+    height: 180px;
+  }
+
+  &__list {
+    margin-top: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 45%;
+  }
+
+  &__name {
+    text-align: center;
+    font-size: .7rem;
+  }
+
+  &__desc {
+    font-size: .5rem;
+  }
+}
+
+//* * * * * * * * * recruite-page * * * * * * * * * * 
+.c-recruite {
+  padding: 15vw 0;
+  letter-spacing: 3px;
+  line-height: 2;
+
+  &__title {
+    & span {
+      padding-top: 8vw;
+      text-align: center;
+      font-weight: 100;
+      font-size: 1.8rem;
+      display: block;
+      color: $cSubBlack;
+    }
+
+    & p {
+      margin-top: 10vw;
+      font-size: .5rem;
+      line-height: 2;
+    }
+
+  }
+
+  &__list {
+    margin-top: 10vw;
+    font-size: .6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    text-align: right;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-size: .7rem;
+
+    & span {
+      position: relative;
+      padding-left: 20px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgb(148, 148, 148);
+
+      &::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 15px;
+        width: 15px;
+        background-image: url(/images/common/icon-tel.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__name {
+    text-align: center;
+    font-size: .7rem;
+  }
+
+  &__desc {
+    font-size: .5rem;
+  }
+}
+
+//* * * * * * news-page * * * * * * * 
+.c-news {
+  padding: 30vw 0 10vw 0;
+  letter-spacing: 3px;
+
+  &__link {
+    display: block;
+    padding: 5vw 0;
+
+    & p {
+      margin-top: 2vw;
+      font-size: .8rem;
+    }
+  }
+
+  &__date {
+    color: $cSubBlack;
+  }
+
+  &__item {
+    border-bottom: 1px solid rgb(235, 235, 235);
+
+    &:first-child {
+      border-top: 1px solid rgb(235, 235, 235);
+    }
+  }
+
+  &__list {
+    padding-bottom: 5vw;
+  }
+
+  .page-numbers {
+    margin: 12vw 0;
+  }
+
+  .page-numbers:not(.next):not(.prev) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $cBlack;
+
+    & .current {
+      border: 1px solid rgba(0, 0, 0, 0);
+      background: #dffde2 !important;
+    }
+
+    & .page-numbers:not(.next):not(.prev) {
+      width: 8vw;
+      height: 8vw;
+      border-radius: 100%;
+      border: 1px solid #C4CCD1;
+      background: #fff;
+      margin: 0 1.3vw;
+    }
+
+    & .next {
+      position: relative;
+      padding-right: 22px;
+      top: 0;
+
+      &::after {
+        transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
+        content: "";
+        position: absolute;
+        right: 0;
+        background-image: url(/images/common/arrow.png);
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        top: 0;
+        width: 15px;
+        height: 15px;
+        margin-left: 8px;
+      }
+    }
+
+    @media (max-width:767px) {
+      & .next {
+        display: none;
+      }
+    }
+
+    @media (min-width:768px) {
+      & .page-numbers:not(.next):not(.prev) {
+        width: 40px;
+        height: 40px;
+      }
+
+      & .next {
+        top: 0;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  &__contents {
+    line-height: 2;
+    font-size: .8rem;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 10vw;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+
+  .c-news__block {
+    padding: 8vw 0;
+  }
+}
+
+//* * * * * * news-single-page * * * * * * * 
+.c-news-sl {
+  padding: 20vw 0 10vw 0;
+
+  & .c-container {
+    padding: 5vw 5vw 0 5vw;
+  }
+
+  &__date {
+    color: $cGray;
+  }
+
+  &__list {
+    padding: 15vw 0 0 0;
+  }
+
+  &__contents {
+    padding: 12vw 0;
+    line-height: 2.5;
+
+    & p {
+      font-size: .8rem;
+    }
+  }
+
+  &__link {
+    margin: 0 0 10vw 0;
+    text-align: right;
+    font-size: 1rem;
+    letter-spacing: 2px;
+
+    & a {
+      display: inline-block;
+      padding-bottom: 3px;
+      border-bottom: 1px solid rgb(114, 114, 114)
+    }
+  }
+}
