@@ -1550,8 +1550,8 @@ body {
   margin: 0;
   color: #2b2b2b;
   text-transform: uppercase;
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Noto Serif JP", serif;
 }
 
 .superwrapper {
@@ -1601,14 +1601,14 @@ dd {
 }
 
 .c-txt-sm {
-  font-size: .8rem;
+  font-size: 0.8rem;
   letter-spacing: 3px;
   line-height: 2;
   color: #5a5a5a;
 }
 
 .c-txt-xs {
-  font-size: .5rem;
+  font-size: 0.5rem;
   letter-spacing: 2px;
   line-height: 2;
   color: #5a5a5a;
@@ -1637,7 +1637,7 @@ dd {
 }
 
 .icon-tel::before {
-  content: '';
+  content: "";
   display: block;
   background-image: url(/images/common/icon-tel.png);
   background-position: center;
@@ -1652,7 +1652,7 @@ dd {
 }
 
 .icon-map::before {
-  content: '';
+  content: "";
   display: block;
   background-image: url(/images/common/icon-map.png);
   background-position: center;
@@ -1667,7 +1667,7 @@ dd {
 }
 
 .icon-net::before {
-  content: '';
+  content: "";
   display: block;
   background-image: url(/images/common/icon-calendar.png);
   background-position: center;
@@ -1686,7 +1686,7 @@ dd {
 }
 
 .icon-insta::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1713,7 +1713,7 @@ dd {
 }
 
 .insta-link span::before {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   top: 0;
@@ -1726,7 +1726,7 @@ dd {
 }
 
 .insta-link span::after {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   top: 10px;
@@ -1857,7 +1857,7 @@ dd {
   padding-top: 15vw;
   letter-spacing: 1px;
   max-width: 100%;
-  font-size: .5rem;
+  font-size: 0.5rem;
 }
 
 .p-price__list dl {
@@ -1881,7 +1881,7 @@ dd {
 
 .p-price__subtitle {
   margin-bottom: 30px;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .p-price__subtitle span {
@@ -1958,7 +1958,7 @@ dd {
 }
 
 .p-access__g-map span::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 3px;
   left: 0;
@@ -1998,7 +1998,7 @@ dd {
   display: block;
   padding: 5vw 0;
   border-bottom: 1px solid #ebebeb;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .p-news__link:first-child {
@@ -2022,7 +2022,7 @@ dd {
 }
 
 .p-news .view-more span {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .p-footer {
@@ -2133,7 +2133,7 @@ dd {
 .p-footer .copyright {
   text-align: center;
   margin-top: 5vw;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-staff {
@@ -2152,7 +2152,7 @@ dd {
 
 .c-staff__title p {
   margin-top: 10vw;
-  font-size: .5rem;
+  font-size: 0.5rem;
   line-height: 2;
 }
 
@@ -2178,22 +2178,22 @@ dd {
 
 .c-staff__name {
   text-align: center;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .c-staff__desc {
-  font-size: .5rem;
+  font-size: 0.5rem;
 }
 
 .c-staff .sns-link span {
   position: relative;
   padding-left: 30px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .c-staff .sns-link span::before {
   position: absolute;
-  top: 0;
+  top: -1;
   left: 0;
   content: "";
   display: inline-block;
@@ -2220,13 +2220,13 @@ dd {
 
 .c-recruite__title p {
   margin-top: 10vw;
-  font-size: .5rem;
+  font-size: 0.5rem;
   line-height: 2;
 }
 
 .c-recruite__list {
   margin-top: 10vw;
-  font-size: .6rem;
+  font-size: 0.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2241,7 +2241,7 @@ dd {
   text-align: right;
   letter-spacing: 2px;
   line-height: 1.5;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .c-recruite__btn span {
@@ -2252,7 +2252,7 @@ dd {
 }
 
 .c-recruite__btn span::before {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   top: 0;
@@ -2267,11 +2267,11 @@ dd {
 
 .c-recruite__name {
   text-align: center;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .c-recruite__desc {
-  font-size: .5rem;
+  font-size: 0.5rem;
 }
 
 .c-news {
@@ -2286,7 +2286,7 @@ dd {
 
 .c-news__link p {
   margin-top: 2vw;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news__date {
@@ -2332,7 +2332,7 @@ dd {
   width: 8vw;
   height: 8vw;
   border-radius: 100%;
-  border: 1px solid #C4CCD1;
+  border: 1px solid #c4ccd1;
   background: #fff;
   margin: 0 1.3vw;
 }
@@ -2378,7 +2378,7 @@ dd {
 
 .c-news__contents {
   line-height: 2;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news__title {
@@ -2414,7 +2414,7 @@ dd {
 }
 
 .c-news-sl__contents p {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news-sl__link {

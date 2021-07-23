@@ -3,8 +3,8 @@ body {
   margin: 0;
   color: $cBlack;
   text-transform: uppercase;
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Noto Serif JP", serif;
 }
 
 .superwrapper {
@@ -53,14 +53,14 @@ dd {
 }
 
 .c-txt-sm {
-  font-size: .8rem;
+  font-size: 0.8rem;
   letter-spacing: 3px;
   line-height: 2;
   color: $cSubBlack;
 }
 
 .c-txt-xs {
-  font-size: .5rem;
+  font-size: 0.5rem;
   letter-spacing: 2px;
   line-height: 2;
   color: $cSubBlack;
@@ -88,7 +88,7 @@ dd {
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     background-image: url(/images/common/icon-tel.png);
     background-position: center;
@@ -97,14 +97,13 @@ dd {
     height: 19px;
     width: 19px;
   }
-
 }
 
 .icon-map {
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     background-image: url(/images/common/icon-map.png);
     background-position: center;
@@ -113,14 +112,13 @@ dd {
     height: 19px;
     width: 19px;
   }
-
 }
 
 .icon-net {
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     background-image: url(/images/common/icon-calendar.png);
     background-position: center;
@@ -129,7 +127,6 @@ dd {
     height: 19px;
     width: 19px;
   }
-
 }
 
 .icon-insta {
@@ -140,7 +137,7 @@ dd {
   padding-bottom: 5px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -166,7 +163,7 @@ dd {
     font-size: 16px;
 
     &::before {
-      content: '';
+      content: "";
       display: inline-block;
       position: absolute;
       top: 0;
@@ -179,7 +176,7 @@ dd {
     }
 
     &::after {
-      content: '';
+      content: "";
       display: inline-block;
       position: absolute;
       top: 10px;
@@ -200,7 +197,7 @@ dd {
   & .swiper-container {
     height: 91vh;
 
-    @media (max-width:1199px) {
+    @media (max-width: 1199px) {
       .view-pc {
         display: none;
       }
@@ -311,7 +308,7 @@ dd {
     padding-top: 15vw;
     letter-spacing: 1px;
     max-width: 100%;
-    font-size: .5rem;
+    font-size: 0.5rem;
 
     & dl {
       display: flex;
@@ -331,7 +328,7 @@ dd {
 
   &__subtitle {
     margin-bottom: 30px;
-    font-size: .9rem;
+    font-size: 0.9rem;
 
     & span {
       font-size: 0.6em;
@@ -407,7 +404,7 @@ dd {
       border-bottom: 1px solid rgb(163, 163, 163);
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 3px;
         left: 0;
@@ -450,7 +447,7 @@ dd {
     display: block;
     padding: 5vw 0;
     border-bottom: 1px solid rgb(235, 235, 235);
-    font-size: .8rem;
+    font-size: 0.8rem;
 
     &:first-child {
       border-top: 1px solid rgb(235, 235, 235);
@@ -473,13 +470,12 @@ dd {
     letter-spacing: 2px;
 
     & span {
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
   }
-
 }
 
-//.p-footer 
+//.p-footer
 .p-footer {
   padding: 10vw 0;
   background-color: rgb(238, 231, 231);
@@ -538,7 +534,6 @@ dd {
         width: 22px;
       }
     }
-
   }
 
   & .sns-fb {
@@ -569,17 +564,16 @@ dd {
         width: 22px;
       }
     }
-
   }
 
   & .copyright {
     text-align: center;
     margin-top: 5vw;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 
-//* * * * * * * * * staff-page * * * * * * * * * * 
+//* * * * * * * * * staff-page * * * * * * * * * *
 .c-staff {
   padding: 15vw 0;
   letter-spacing: 3px;
@@ -596,10 +590,9 @@ dd {
 
     & p {
       margin-top: 10vw;
-      font-size: .5rem;
+      font-size: 0.5rem;
       line-height: 2;
     }
-
   }
 
   &__img {
@@ -619,21 +612,21 @@ dd {
 
   &__name {
     text-align: center;
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   &__desc {
-    font-size: .5rem;
+    font-size: 0.5rem;
   }
 
   .sns-link {
     & span {
       position: relative;
       padding-left: 30px;
-      font-size: 16px;
+      font-size: 14px;
       &::before {
         position: absolute;
-        top: 0;
+        top: -1;
         left: 0;
         content: "";
         display: inline-block;
@@ -646,7 +639,7 @@ dd {
   }
 }
 
-//* * * * * * * * * recruite-page * * * * * * * * * * 
+//* * * * * * * * * recruite-page * * * * * * * * * *
 .c-recruite {
   padding: 15vw 0;
   letter-spacing: 3px;
@@ -664,15 +657,14 @@ dd {
 
     & p {
       margin-top: 10vw;
-      font-size: .5rem;
+      font-size: 0.5rem;
       line-height: 2;
     }
-
   }
 
   &__list {
     margin-top: 10vw;
-    font-size: .6rem;
+    font-size: 0.6rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -682,7 +674,7 @@ dd {
     text-align: right;
     letter-spacing: 2px;
     line-height: 1.5;
-    font-size: .7rem;
+    font-size: 0.7rem;
 
     & span {
       position: relative;
@@ -691,7 +683,7 @@ dd {
       border-bottom: 1px solid rgb(148, 148, 148);
 
       &::before {
-        content: '';
+        content: "";
         display: inline-block;
         position: absolute;
         top: 0;
@@ -708,15 +700,15 @@ dd {
 
   &__name {
     text-align: center;
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   &__desc {
-    font-size: .5rem;
+    font-size: 0.5rem;
   }
 }
 
-//* * * * * * news-page * * * * * * * 
+//* * * * * * news-page * * * * * * *
 .c-news {
   padding: 30vw 0 10vw 0;
   letter-spacing: 3px;
@@ -727,7 +719,7 @@ dd {
 
     & p {
       margin-top: 2vw;
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
   }
 
@@ -767,7 +759,7 @@ dd {
       width: 8vw;
       height: 8vw;
       border-radius: 100%;
-      border: 1px solid #C4CCD1;
+      border: 1px solid #c4ccd1;
       background: #fff;
       margin: 0 1.3vw;
     }
@@ -793,13 +785,13 @@ dd {
       }
     }
 
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
       & .next {
         display: none;
       }
     }
 
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       & .page-numbers:not(.next):not(.prev) {
         width: 40px;
         height: 40px;
@@ -814,7 +806,7 @@ dd {
 
   &__contents {
     line-height: 2;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   &__title {
@@ -829,7 +821,7 @@ dd {
   }
 }
 
-//* * * * * * news-single-page * * * * * * * 
+//* * * * * * news-single-page * * * * * * *
 .c-news-sl {
   padding: 20vw 0 10vw 0;
 
@@ -850,7 +842,7 @@ dd {
     line-height: 2.5;
 
     & p {
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
   }
 
@@ -863,7 +855,7 @@ dd {
     & a {
       display: inline-block;
       padding-bottom: 3px;
-      border-bottom: 1px solid rgb(114, 114, 114)
+      border-bottom: 1px solid rgb(114, 114, 114);
     }
   }
 }
