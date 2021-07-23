@@ -248,6 +248,18 @@ Stylesheet: 960px以上のモニタで適用
   &__desc {
     font-size: 1rem;
   }
+  
+  .sns-link {
+    & span {
+      font-size: 25px;
+      &::before {
+        height: 24px;
+        width: 24px;
+        top: 0px;
+        right: 10px;
+      }
+    }
+  }
 }
 
 //* * * * * * recruite-page * * * * * * *
