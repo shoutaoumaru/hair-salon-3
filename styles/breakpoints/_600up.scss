@@ -71,7 +71,7 @@ Stylesheet: 600px以上のモニタで適用
   }
 }
 
-//.p-price 
+//.p-price
 .p-price {
   &__list {
     display: flex;
@@ -100,7 +100,7 @@ Stylesheet: 600px以上のモニタで適用
   padding: 5vw 0;
 }
 
-//.p-access 
+//.p-access
 .p-access {
   padding: 10vw 0;
 
@@ -117,7 +117,7 @@ Stylesheet: 600px以上のモニタで適用
   }
 }
 
-//.p-footer 
+//.p-footer
 .p-footer {
   & .c-logo {
     & img {
@@ -135,7 +135,7 @@ Stylesheet: 600px以上のモニタで適用
     }
 
     & p {
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
   }
 
@@ -148,7 +148,7 @@ Stylesheet: 600px以上のモニタで適用
   }
 
   &__text {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -167,15 +167,15 @@ Stylesheet: 600px以上のモニタで適用
   }
 
   &__desc {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .sns-link {
     & span {
-      font-size: 25px;
+      font-size: 0.9rem;
       &::before {
-        height: 24px;
-        width: 24px;
+        height: 1.1rem;
+        width: 1.1rem;
         top: 0px;
         right: 10px;
       }
@@ -196,7 +196,6 @@ Stylesheet: 600px以上のモニタで適用
   }
 
   &__tit {
-
     & p {
       font-size: 1.2rem;
     }
@@ -204,7 +203,7 @@ Stylesheet: 600px以上のモニタで適用
 
   &__contents {
     & p {
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
   }
 }

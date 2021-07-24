@@ -69,7 +69,6 @@ Stylesheet: 960px以上のモニタで適用
 
 //.header
 .header {
-
   & .logo__img {
     margin-left: 50px;
   }
@@ -92,7 +91,6 @@ Stylesheet: 960px以上のモニタで適用
     & .pc-nav-item {
       padding-top: 2.5vw;
     }
-
   }
 }
 
@@ -103,7 +101,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-//.p-gallery 
+//.p-gallery
 .p-gallery {
   &__item {
     height: 200px;
@@ -234,7 +232,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 
   &__desc {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   &__list {
@@ -248,13 +246,13 @@ Stylesheet: 960px以上のモニタで適用
   &__desc {
     font-size: 1rem;
   }
-  
+
   .sns-link {
     & span {
-      font-size: 25px;
+      font-size: 1.2rem;
       &::before {
-        height: 24px;
-        width: 24px;
+        height: 1.2rem;
+        width: 1.2rem;
         top: 0px;
         right: 10px;
       }

@@ -607,6 +607,8 @@ dd {
   }
 
   &__item {
+    position: relative;
+    margin-bottom: 30px;
     width: 45%;
   }
 
@@ -620,20 +622,27 @@ dd {
   }
 
   .sns-link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    margin: auto;
+
     & span {
       position: relative;
-      padding-left: 30px;
-      font-size: 14px;
+      padding-left: 25px;
+      font-size: 0.7rem;
       &::before {
         position: absolute;
-        top: -1;
+        top: 0;
         left: 0;
         content: "";
         display: inline-block;
         background-image: url(/images/common/icon-insta-gr.png);
         background-size: contain;
-        height: 20px;
-        width: 20px;
+        background-repeat: no-repeat;
+        height: 0.7rem;
+        width: 0.7rem;
       }
     }
   }
