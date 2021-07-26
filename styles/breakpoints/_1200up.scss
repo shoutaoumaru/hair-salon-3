@@ -42,6 +42,32 @@ Stylesheet: 1200px以上のモニタで適用
   }
 }
 
+//.p-price 
+.p-price {
+  padding-bottom: 0;
+
+  &__img-wrap {
+    padding: 10vw 0;
+  }
+}
+
+//.p-news 
+.p-news {
+  padding: 0 0 10vw 0;
+
+  &__tit {
+    margin-bottom: 5vw;
+  }
+
+  &__link {
+    padding: 2vw 5vw;
+  }
+
+  & .view-more {
+    margin-top: 5vw;
+  }
+}
+
 //.p-footer
 .p-footer {
   padding: 5vw 0;

@@ -55,6 +55,17 @@ Stylesheet: 600px以上のモニタで適用
     top: 25px;
     right: 40px;
   }
+
+  & .sp-navbtn {
+    display: none;
+  }
+}
+
+//.p-firstview 
+.p-firstview {
+  .swiper-container {
+    height: 100vh;
+  }
 }
 
 //.p-concept
@@ -73,6 +84,8 @@ Stylesheet: 600px以上のモニタで適用
 
 //.p-price
 .p-price {
+  padding: 20vw 0 15vw 0;
+
   &__list {
     display: flex;
     justify-content: space-between;
@@ -173,6 +186,7 @@ Stylesheet: 600px以上のモニタで適用
   .sns-link {
     & span {
       font-size: 0.9rem;
+
       &::before {
         height: 1.1rem;
         width: 1.1rem;

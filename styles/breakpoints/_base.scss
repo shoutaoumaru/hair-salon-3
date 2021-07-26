@@ -289,7 +289,7 @@ dd {
 
 //プライスセクション
 .p-price {
-  padding: 20vw 0 45vw 0;
+  padding: 20vw 0 25vw 0;
 
   &__title {
     text-align: left;
@@ -346,12 +346,19 @@ dd {
 
   &__img {
     width: 60%;
-    box-shadow: 15px 25px 45px rgb(206, 206, 206);
+
+    & img {
+      box-shadow: 15px 25px 45px rgb(206, 206, 206);
+    }
+
+    &.left {
+      margin-top: 45vw;
+    }
   }
 
   & .right {
     position: absolute;
-    top: 2vw;
+    top: 18vw;
     right: 0;
   }
 
@@ -446,12 +453,7 @@ dd {
   &__link {
     display: block;
     padding: 5vw 0;
-    border-bottom: 1px solid rgb(235, 235, 235);
     font-size: 0.8rem;
-
-    &:first-child {
-      border-top: 1px solid rgb(235, 235, 235);
-    }
 
     & p {
       margin-top: 2vw;
@@ -461,6 +463,14 @@ dd {
       padding: 3px;
       border-radius: 5%;
       background-color: rgb(247, 247, 247);
+    }
+  }
+
+  &__item {
+    border-bottom: 1px solid rgb(235, 235, 235);
+
+    &:first-child {
+      border-top: 1px solid rgb(235, 235, 235);
     }
   }
 
@@ -632,6 +642,7 @@ dd {
       position: relative;
       padding-left: 25px;
       font-size: 0.7rem;
+
       &::before {
         position: absolute;
         top: 0;

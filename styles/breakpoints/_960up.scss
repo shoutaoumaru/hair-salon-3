@@ -84,12 +84,16 @@ Stylesheet: 960px以上のモニタで適用
   }
 
   & .pc-container {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 6000;
     border-bottom: 1px solid rgb(36, 36, 36);
     backdrop-filter: blur(3px);
 
     & .pc-nav-item {
-      padding-top: 2.5vw;
+      padding-top: 2.3vw;
     }
   }
 }
@@ -250,6 +254,7 @@ Stylesheet: 960px以上のモニタで適用
   .sns-link {
     & span {
       font-size: 1.2rem;
+
       &::before {
         height: 1.2rem;
         width: 1.2rem;
