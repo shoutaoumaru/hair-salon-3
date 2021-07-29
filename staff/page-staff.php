@@ -1,16 +1,13 @@
+<?php 
+/* Template Name: STAFF
+*/
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>美容師テンプレート4/staff</title>
-  <link rel="stylesheet" href="/styles/vendor/animsition.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap" rel="stylesheet" />
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../styles/style.css">
+  <title>美容院テンプレート1/STAFF</title>
+  <?php get_header(); ?>
 </head>
 
 <body>
@@ -43,13 +40,13 @@
               <a class="pc-nav-link animsition-link" href="/"><span>top</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/staff/staff.html"><span>staff</span></a>
+            <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>"><span>Staff</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/recruite/recruite.html"><span>recruit</span></a>
+            <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>"><span>Recruit</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/news/news.html"><span>news</span></a>
+            <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/news')); ?>"><span>News</span></a>
             </li>
             <li class="pc-nav-item">
               <a target="_blank" class="pc-nav-link reserve-btn"
@@ -63,7 +60,7 @@
         <ul class="sp-navbtn__container">
           <li><a href="tel:092-686-7954"><i class="icon-tel"></i></a></li>
           <li><a target="_blank" href="https://beauty.hotpepper.jp/"><i class="icon-net"></i></a></li>
-          <li><a href="https://g.page/3-27-25-Hakataekimae-3184?share" target="_blank"><i class="icon-map"></i></a></li>
+          <li><a href="https://goo.gl/maps/CyWuFwBDtuB9U6Ld7" target="_blank"><i class="icon-map"></i></a></li>
         </ul>
       </nav>
       <!-- /.nav-btn -->
@@ -83,7 +80,7 @@
             <div class="c-staff__list">
               <div class="c-staff__item">
                 <div class="c-staff__img">
-                  <img src="/images/home/biyousshi_mens@sp.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/biyousshi_mens@sp.jpg" alt="">
                 </div>
                 <h4 class="c-staff__name">
                   <p class="ja">利部 翔太</p>
@@ -97,7 +94,7 @@
               </div>
               <div class="c-staff__item">
                 <div class="c-staff__img">
-                  <img src="/images/home/biyoushi.lady@sp.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/biyoushi.lady@sp.jpg" alt="">
                 </div>
                 <h4 class="c-staff__name">
                   <p class="ja">利部 梨花</p>
@@ -111,7 +108,7 @@
               </div>
               <div class="c-staff__item">
                 <div class="c-staff__img">
-                  <img src="/images/home/staff_1@sp.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/staff_1@sp.jpg" alt="">
                 </div>
                 <h4 class="c-staff__name">
                   <p class="ja">利部 美紀</p>
@@ -140,7 +137,7 @@
           </div>
         </div>
         <div class="c-logo">
-          <img src="/images/common/riv_logo_official2.png" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/riv_logo_official2.png" alt="">
         </div>
         <div class="copyright">
           © RivRound.inc
@@ -155,13 +152,13 @@
             <a class="animsition-link" href="/">TOP</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/staff/staff.html">STAFF</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>">STAFF</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/recruite/recruite.html">RECRUIT</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>">RECRUIT</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/news/news.html">NEWS</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">NEWS</a>
           </li>
         </ul>
         <div class="reserve-btn-wrap">
@@ -183,11 +180,6 @@
     <!-- /.mobile-menu -->
   </div>
   <!-- /.superwrapper -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="/scripts/vendor/animsition.min.js"></script>
-  <script src="/scripts/libs/page.js"></script>
-  <script src="../scripts/libs/scroll-btn.js"></script>
-  <script src="../scripts/libs/mobile-menu.js"></script>
+  <?php get_template_part('includes/c-footer'); ?>
 </body>
-
 </html>

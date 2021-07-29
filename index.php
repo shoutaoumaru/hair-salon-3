@@ -2,19 +2,7 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>美容師テンプレート3/top</title>
-  <link rel="stylesheet" href="/styles/vendor/logo-animation.min.css">
-  <link rel="stylesheet" href="styles/vendor/bootstrap-reboot.css" />
-  <link rel="stylesheet" href="styles/vendor/animsition.min.css" />
-  <link rel="stylesheet" href="styles/vendor/swiper.min.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300&family=Noto+Serif+JP:wght@200&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="styles/style.css" />
+  <?php get_header(); ?>
 </head>
 
 <body class="animsition">
@@ -135,13 +123,13 @@
               <a class="pc-nav-link animsition-link" href="/"><span>top</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/staff/staff.html"><span>staff</span></a>
+            <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>"><span>Staff</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/recruite/recruite.html"><span>recruit</span></a>
+            <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>"><span>Recruit</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/news/news.html"><span>news</span></a>
+            <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/news')); ?>"><span>News</span></a>
             </li>
             <li class="pc-nav-item">
               <a target="_blank" class="pc-nav-link reserve-btn"
@@ -167,16 +155,16 @@
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img class="view-sp" src="images/home/style_1@sp.jpg" />
-              <img class="view-pc" src="images/home/style_1@pc.jpg" />
+              <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/style_1@sp.jpg" />
+              <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/style_1@pc.jpg" />
             </div>
             <div class="swiper-slide">
-              <img class="view-sp" src="images/home/cut_3@sp.jpg" />
-              <img class="view-pc" src="images/home/cut_3@pc.jpg" />
+              <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/cut_3@sp.jpg" />
+              <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/cut_3@pc.jpg" />
             </div>
             <div class="swiper-slide">
-              <img class="view-sp" src="images/home/store_2@sp.jpg" />
-              <img class="view-pc" src="images/home/store_2@pc.jpg" />
+              <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/store_2@sp.jpg" />
+              <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/store_2@pc.jpg" />
             </div>
           </div>
         </div>
@@ -216,31 +204,31 @@
         </h2>
         <ul class="p-gallery__list appear up">
           <li class="p-gallery__item item">
-            <a href="/images/home/style_2.jpg" data-lightbox="group"><img src="/images/home/style_2.jpg" /></a>
+            <a href="/images/home/style_2.jpg" data-lightbox="group"><img src="<?php echo get_template_directory_uri(); ?>/images/home/style_2.jpg" /></a>
           </li>
           <li class="p-gallery__item item">
-            <a href="/images/home/style__1.jpg" data-lightbox="group"><img src="/images/home/style__1.jpg" /></a>
+            <a href="/images/home/style__1.jpg" data-lightbox="group"><img src="<?php echo get_template_directory_uri(); ?>/images/home/style__1.jpg" /></a>
           </li>
           <li class="p-gallery__item item">
-            <a href="/images/home/style__2.jpg" data-lightbox="group"><img src="/images/home/style__2.jpg" /></a>
+            <a href="/images/home/style__2.jpg" data-lightbox="group"><img src="<?php echo get_template_directory_uri(); ?>/images/home/style__2.jpg" /></a>
           </li>
           <li class="p-gallery__item item">
-            <a href="/images/home/style_5@pc.jpg" data-lightbox="group"><img src="/images/home/style_5@pc.jpg" /></a>
+            <a href="/images/home/style_5@pc.jpg" data-lightbox="group"><img src="<?php echo get_template_directory_uri(); ?>/images/home/style_5@pc.jpg" /></a>
           </li>
           <li class="p-gallery__item item">
-            <a href="/images/home/style_6.jpg" data-lightbox="group"><img src="/images/home/style_6.jpg" /></a>
+            <a href="/images/home/style_6.jpg" data-lightbox="group"><img src="<?php echo get_template_directory_uri(); ?>/images/home/style_6.jpg" /></a>
           </li>
           <li class="p-gallery__item item">
-            <a href="/images/home/style_7@pc.jpg" data-lightbox="group"><img src="/images/home/style_11.jpg" /></a>
+            <a href="/images/home/style_7@pc.jpg" data-lightbox="group"><img src="<?php echo get_template_directory_uri(); ?>/images/home/style_11.jpg" /></a>
           </li>
           <li class="p-gallery__item item">
-            <a href="/images/home/style_8.jpg" data-lightbox="group"><img src="/images/home/style_8.jpg" /></a>
+            <a href="/images/home/style_8.jpg" data-lightbox="group"><img src="<?php echo get_template_directory_uri(); ?>/images/home/style_8.jpg" /></a>
           </li>
           <li class="p-gallery__item item">
-            <a href="/images/home/style_9.jpg" data-lightbox="group"><img src="/images/home/style_9.jpg" /></a>
+            <a href="/images/home/style_9.jpg" data-lightbox="group"><img src="<?php echo get_template_directory_uri(); ?>/images/home/style_9.jpg" /></a>
           </li>
           <li class="p-gallery__item item">
-            <a href="/images/home/style_10.jpg" data-lightbox="group"><img src="/images/home/style_10.jpg" /></a>
+            <a href="/images/home/style_10.jpg" data-lightbox="group"><img src="<?php echo get_template_directory_uri(); ?>/images/home/style_10.jpg" /></a>
           </li>
         </ul>
         <div class="insta-link">
@@ -257,7 +245,7 @@
         </h2>
         <div class="p-staff__block staff01 appear up">
           <div class="p-staff__img item">
-            <img class="item" src="images/home/biyousshi_mens@sp.jpg" />
+            <img class="item" src="<?php echo get_template_directory_uri(); ?>/images/home/biyousshi_mens@sp.jpg" />
           </div>
           <div class="p-staff__wrap item">
             <h2 class="p-staff__name">
@@ -276,7 +264,7 @@
         </div>
         <div class="p-staff__block staff02 appear up">
           <div class="p-staff__img item">
-            <img class="item" src="images/home/staff_1@sp.jpg" />
+            <img class="item" src="<?php echo get_template_directory_uri(); ?>/images/home/staff_1@sp.jpg" />
           </div>
           <div class="p-staff__wrap item">
             <h2 class="p-staff__name">
@@ -292,7 +280,7 @@
           </div>
         </div>
         <div class="view-more appear up">
-          <a class="item" href="/staff/staff.html">
+          <a class="item" href="/staff">
             <span>view more</span>
           </a>
         </div>
@@ -415,10 +403,10 @@
         </div>
         <div class="p-price__img-wrap appear up">
           <div class="p-price__img left">
-            <img class="parallax-down" src="/images/home/style_7@sp.jpg" alt="">
+            <img class="parallax-down" src="<?php echo get_template_directory_uri(); ?>/images/home/style_7@sp.jpg" alt="">
           </div>
           <div class="p-price__img  rellax right">
-            <img class="gallery-img" src="/images/home/style_10.jpg" alt="">
+            <img class="gallery-img" src="<?php echo get_template_directory_uri(); ?>/images/home/style_10.jpg" alt="">
           </div>
         </div>
       </div>
@@ -473,7 +461,7 @@
           </div>
         </div>
         <div class="p-access__img item">
-          <img src="/images/home/store__2@pc.jpg" alt="" class="p-access__photo parallax">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/home/store__2@pc.jpg" alt="" class="p-access__photo parallax">
         </div>
       </div>
     </section>
@@ -505,7 +493,7 @@
             </li>
           </ul>
           <div class="view-more item">
-            <a class="view-more__link animsition-link" href="/news/news.html">
+            <a class="view-more__link animsition-link" href="/news">
               <span>NEWS LIST</span></a>
           </div>
         </div>
@@ -523,7 +511,7 @@
           </div>
         </div>
         <div class="c-logo">
-          <img src="/images/common/riv_logo_official2.png" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/riv_logo_official2.png" alt="">
         </div>
         <div class="copyright">
           © RivRound.inc
@@ -538,13 +526,13 @@
             <a class="animsition-link" href="/">TOP</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/staff/staff.html">STAFF</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>">STAFF</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/recruite/recruite.html">RECRUIT</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>">RECRUIT</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/news/news.html">NEWS</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">NEWS</a>
           </li>
         </ul>
         <div class="reserve-btn-wrap">
@@ -565,21 +553,7 @@
     </div>
   </div>
   <!-- /.superwrapper -->
-  <script src="/scripts/vendor/pace.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript">
-  </script>
-  <script src="scripts/vendor/animsition.min.js"></script>
-  <script src="scripts/libs/page.js"></script>
-  <script src="/scripts/vendor/swiper.min.js"></script>
-  <script src="/scripts/vendor/simpleParallax.min.js"></script>
-  <script src="/scripts/libs/parallax.js"></script>
-  <script src="/scripts/libs/hero-slider.js"></script>
-  <script src="/scripts/libs/scroll-btn.js"></script>
-  <script src="/scripts/libs//mobile-menu.js"></script>
-  <script src="/scripts/libs/scroll.js"></script>
-  <script src="/scripts/libs/text-animation.js"></script>
-  <script src="/scripts/main.js"></script>
+  <?php get_footer(); ?>
 </body>
 
 </html>

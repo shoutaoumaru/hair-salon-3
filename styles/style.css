@@ -924,7 +924,7 @@
 }
 
 .header .logo {
-  background-image: url(/images/common/riv_logo_official2.png);
+  background-image: url(../images/common/riv_logo_official2.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -1116,7 +1116,7 @@
   right: 5px;
   height: 12px;
   width: 12px;
-  background-image: url(/images/common/icon-link-1-black.png);
+  background-image: url(../images/common/icon-link-1-black.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1133,7 +1133,7 @@
   right: 10px;
   height: 12px;
   width: 12px;
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(../images/common/icon-tel.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1639,7 +1639,7 @@ dd {
 .icon-tel::before {
   content: "";
   display: block;
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(../images/common/icon-tel.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1654,7 +1654,7 @@ dd {
 .icon-map::before {
   content: "";
   display: block;
-  background-image: url(/images/common/icon-map.png);
+  background-image: url(../images/common/icon-map.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1669,7 +1669,7 @@ dd {
 .icon-net::before {
   content: "";
   display: block;
-  background-image: url(/images/common/icon-calendar.png);
+  background-image: url(../images/common/icon-calendar.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1720,7 +1720,7 @@ dd {
   left: 0;
   height: 20px;
   width: 20px;
-  background-image: url(/images/common/icon-insta-gr.png);
+  background-image: url(../images/common/icon-insta-gr.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1733,7 +1733,7 @@ dd {
   right: 0;
   height: 8px;
   width: 8px;
-  background-image: url(/images/common/arrow.png);
+  background-image: url(../images/common/arrow.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1970,7 +1970,7 @@ dd {
   top: 3px;
   left: 0;
   display: inline-block;
-  background-image: url(/images/common/icon-map.png);
+  background-image: url(../images/common/icon-map.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -2100,7 +2100,7 @@ dd {
   right: 0;
   bottom: 0;
   margin: auto;
-  background-image: url(/images/common/icon-insta-gr.png);
+  background-image: url(../images/common/icon-insta-gr.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -2132,7 +2132,7 @@ dd {
   right: 0;
   bottom: 0;
   margin: auto;
-  background-image: url(/images/common/facebook-ico.png);
+  background-image: url(../images/common/facebook-ico.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -2217,7 +2217,7 @@ dd {
   left: 0;
   content: "";
   display: inline-block;
-  background-image: url(/images/common/icon-insta-gr.png);
+  background-image: url(../images/common/icon-insta-gr.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 0.7rem;
@@ -2280,7 +2280,7 @@ dd {
   left: 0;
   height: 15px;
   width: 15px;
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(../images/common/icon-tel.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2370,7 +2370,7 @@ dd {
   content: "";
   position: absolute;
   right: 0;
-  background-image: url(/images/common/arrow.png);
+  background-image: url(../images/common/arrow.png);
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
