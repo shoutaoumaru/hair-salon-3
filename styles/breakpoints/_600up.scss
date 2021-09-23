@@ -12,6 +12,10 @@ Stylesheet: 600px以上のモニタで適用
   font-size: 1.4rem;
 }
 
+.reserve-btn-js {
+  display: none;
+}
+
 .insta-link {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -171,15 +175,23 @@ Stylesheet: 600px以上のモニタで適用
     height: 240px;
   }
 
+  &__title {
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
   &__item {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   &__name {
-    font-size: 1rem;
+    margin: 20px;
+    font-size: 1.2rem;
   }
 
   &__desc {
+    margin-bottom: 20px;
     font-size: 0.8rem;
   }
 
@@ -199,10 +211,9 @@ Stylesheet: 600px以上のモニタで適用
 
 //* * * * * * news-sl-page * * * * * * *
 .c-news-sl {
-  padding: 10vw 0 0 0;
 
   & .c-container {
-    padding: 0 10vw;
+    padding: 5vw 10vw;
   }
 
   &__date {
@@ -216,6 +227,8 @@ Stylesheet: 600px以上のモニタで適用
   }
 
   &__contents {
+    padding: 4vw 0;
+
     & p {
       font-size: 0.9rem;
     }
@@ -224,8 +237,6 @@ Stylesheet: 600px以上のモニタで適用
 
 //* * * * * * news-page * * * * * * *
 .c-news {
-  padding: 25vw 0 10vw 0;
-
   &__title {
     & span {
       font-size: 1.8rem;
@@ -236,6 +247,10 @@ Stylesheet: 600px以上のモニタで適用
     & p {
       font-size: 1.2rem;
     }
+  }
+
+  &__link {
+    padding: 2.5vw;
   }
 
   &__date {
