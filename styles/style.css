@@ -855,6 +855,172 @@
   }
 }
 
+.reserve-btn-js {
+  position: fixed;
+  bottom: 3%;
+  left: 0;
+  z-index: 9999;
+}
+
+.reserve-btn-js__01 {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  z-index: 9999;
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  border-right: 2px solid #2b2b2b;
+  height: 110px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  border-bottom: 1px solid #a0a0a0;
+}
+
+.reserve-btn-js__01 span {
+  font-size: 14px;
+}
+
+.reserve-btn-js__02 {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  height: 110px;
+  background-color: #f0f0f0;
+  padding: 20px 20px;
+  border-right: 2px solid #2b2b2b;
+  border-bottom: 1px solid #a0a0a0;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 6000;
+  text-align: center;
+}
+
+.reserve-btn-js__02 a {
+  position: relative;
+  display: block;
+  padding-top: 10px;
+  color: #2b2b2b;
+  font-size: 14px;
+}
+
+.reserve-btn-js__02 a::before {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0px;
+  margin: auto;
+  content: '';
+  display: block;
+  text-align: center;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.reserve-btn-js__02 .tel {
+  margin-top: 15px;
+}
+
+.reserve-btn-js__02 .tel a::before {
+  background-image: url(../images/common/icon-tel.png);
+}
+
+.reserve-btn-js__02 .net {
+  margin-top: 15px;
+}
+
+.reserve-btn-js__02 .net a::before {
+  background-image: url(../images/common/icon-link-1-black.png);
+}
+
+.reserve-btn-js .js-left {
+  -webkit-clip-path: inset(0 80% 0 0);
+          clip-path: inset(0 80% 0 0);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.reserve-btn-js .js-left.visible {
+  -webkit-clip-path: inset(0);
+          clip-path: inset(0);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.reserve-btn-js__01.js-reserve {
+  opacity: 0;
+  z-index: -1;
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+}
+
+.sp-navbtn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: .7;
+  height: 10vh;
+  width: 100%;
+  z-index: 2000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.sp-navbtn__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 77vw;
+  margin: auto;
+}
+
+.sp-navbtn__container a {
+  position: relative;
+  color: #2b2b2b;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: block;
+  padding-right: 20px;
+}
+
+.sp-navbtn__container .tel {
+  letter-spacing: 2px;
+}
+
+.sp-navbtn__container a:hover,
+.sp-navbtn__container a:active {
+  text-decoration: underline;
+}
+
+.hide.sp-navbtn {
+  visibility: hidden;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
 .header {
   width: 100%;
   background-color: transparent;
@@ -870,52 +1036,6 @@
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   border-bottom: 1px solid #242424;
-}
-
-.header .sp-navbtn {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  background-color: #fff;
-  opacity: .8;
-  height: 9vh;
-  width: 100%;
-  z-index: 2000;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-.header .sp-navbtn__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 60vw;
-  margin: auto;
-}
-
-.header .sp-navbtn__container a {
-  display: block;
-}
-
-.header .hide.sp-navbtn {
-  visibility: hidden;
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
 }
 
 .header .logo__img {
@@ -1554,6 +1674,10 @@ body {
   font-family: "Noto Serif JP", serif;
 }
 
+body.hidden {
+  overflow: hidden;
+}
+
 .superwrapper {
   overflow: hidden;
 }
@@ -1690,7 +1814,7 @@ dd {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(/images/common/icon-insta-gr.png);
+  background-image: url(../images/common/icon-insta-gr.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1736,6 +1860,22 @@ dd {
   background-image: url(../images/common/arrow.png);
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.c-top-view {
+  height: 25vh;
+}
+
+@media (min-width: 600px) {
+  .c-top-view {
+    height: 30vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  .c-top-view {
+    height: 30vh;
+  }
 }
 
 .p-firstview {
@@ -2147,13 +2287,13 @@ dd {
 }
 
 .c-staff {
-  padding: 15vw 0;
+  padding: 0 0 15vw 0;
   letter-spacing: 3px;
   line-height: 2;
 }
 
 .c-staff__title span {
-  padding-top: 8vw;
+  padding-top: 4vw;
   text-align: center;
   font-weight: 100;
   font-size: 2rem;
@@ -2161,7 +2301,7 @@ dd {
 }
 
 .c-staff__title p {
-  margin-top: 10vw;
+  margin-top: 4vw;
   font-size: 0.5rem;
   line-height: 2;
 }
@@ -2171,7 +2311,7 @@ dd {
 }
 
 .c-staff__list {
-  margin-top: 10vw;
+  margin-top: 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2225,13 +2365,13 @@ dd {
 }
 
 .c-recruite {
-  padding: 15vw 0;
+  padding: 0 0 10vw 0;
   letter-spacing: 3px;
   line-height: 2;
 }
 
 .c-recruite__title span {
-  padding-top: 8vw;
+  padding-top: 4vw;
   text-align: center;
   font-weight: 100;
   font-size: 1.8rem;
@@ -2240,9 +2380,13 @@ dd {
 }
 
 .c-recruite__title p {
-  margin-top: 10vw;
+  margin-top: 4vw;
   font-size: 0.5rem;
   line-height: 2;
+}
+
+.c-recruite__subtitle {
+  font-size: 1rem;
 }
 
 .c-recruite__list {
@@ -2258,10 +2402,14 @@ dd {
           justify-content: space-between;
 }
 
+.c-recruite__item {
+  margin-bottom: 20px;
+}
+
 .c-recruite__btn {
+  margin-top: 20px;
   text-align: right;
   letter-spacing: 2px;
-  line-height: 1.5;
   font-size: 0.7rem;
 }
 
@@ -2296,7 +2444,7 @@ dd {
 }
 
 .c-news {
-  padding: 30vw 0 10vw 0;
+  padding: 6vw 0 5vw 0;
   letter-spacing: 3px;
 }
 
@@ -2320,10 +2468,6 @@ dd {
 
 .c-news__item:first-child {
   border-top: 1px solid #ebebeb;
-}
-
-.c-news__list {
-  padding-bottom: 5vw;
 }
 
 .c-news .page-numbers {
@@ -2404,7 +2548,7 @@ dd {
 
 .c-news__title {
   text-align: center;
-  margin-bottom: 10vw;
+  margin-bottom: 6vw;
   letter-spacing: 2px;
   font-weight: 100;
 }
@@ -2413,20 +2557,12 @@ dd {
   padding: 8vw 0;
 }
 
-.c-news-sl {
-  padding: 20vw 0 10vw 0;
-}
-
 .c-news-sl .c-container {
-  padding: 5vw 5vw 0 5vw;
+  padding: 10vw 5vw;
 }
 
 .c-news-sl__date {
   color: #a0a0a0;
-}
-
-.c-news-sl__list {
-  padding: 15vw 0 0 0;
 }
 
 .c-news-sl__contents {
@@ -2439,7 +2575,6 @@ dd {
 }
 
 .c-news-sl__link {
-  margin: 0 0 10vw 0;
   text-align: right;
   font-size: 1rem;
   letter-spacing: 2px;
@@ -2462,6 +2597,9 @@ Stylesheet: 600px以上のモニタで適用
   }
   .c-txt-lr {
     font-size: 1.4rem;
+  }
+  .reserve-btn-js {
+    display: none;
   }
   .insta-link {
     margin-top: 50px;
@@ -2572,13 +2710,18 @@ Stylesheet: 600px以上のモニタで適用
   .c-staff__img {
     height: 240px;
   }
+  .c-staff__title p {
+    font-size: 0.8rem;
+  }
   .c-staff__item {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   .c-staff__name {
-    font-size: 1rem;
+    margin: 20px;
+    font-size: 1.2rem;
   }
   .c-staff__desc {
+    margin-bottom: 20px;
     font-size: 0.8rem;
   }
   .c-staff .sns-link span {
@@ -2590,11 +2733,8 @@ Stylesheet: 600px以上のモニタで適用
     top: 0px;
     right: 10px;
   }
-  .c-news-sl {
-    padding: 10vw 0 0 0;
-  }
   .c-news-sl .c-container {
-    padding: 0 10vw;
+    padding: 5vw 10vw;
   }
   .c-news-sl__date {
     font-size: 1.2rem;
@@ -2602,17 +2742,20 @@ Stylesheet: 600px以上のモニタで適用
   .c-news-sl__tit p {
     font-size: 1.2rem;
   }
+  .c-news-sl__contents {
+    padding: 4vw 0;
+  }
   .c-news-sl__contents p {
     font-size: 0.9rem;
-  }
-  .c-news {
-    padding: 25vw 0 10vw 0;
   }
   .c-news__title span {
     font-size: 1.8rem;
   }
   .c-news__list p {
     font-size: 1.2rem;
+  }
+  .c-news__link {
+    padding: 2.5vw;
   }
   .c-news__date {
     font-size: 1.2rem;
@@ -2780,10 +2923,9 @@ Stylesheet: 960px以上のモニタで適用
     margin-bottom: 7vw;
   }
   .c-staff {
-    padding: 10vw 0;
+    padding: 0 0 5vw 0;
   }
   .c-staff__title p {
-    margin-top: 7vw;
     font-size: 1rem;
   }
   .c-staff__item {
@@ -2812,10 +2954,10 @@ Stylesheet: 960px以上のモニタで適用
     right: 10px;
   }
   .c-recruite {
-    padding: 15vw 0 10vw 0;
+    padding: 0 0 10vw 0;
   }
   .c-recruite__title p {
-    margin-top: 5vw;
+    margin-top: 3vw;
     font-size: 1rem;
   }
   .c-recruite__subtitle {
@@ -2827,24 +2969,12 @@ Stylesheet: 960px以上のモニタで適用
   .c-recruite__btn {
     display: none;
   }
-  .c-news {
-    padding: 20vw 0 10vw 0;
-  }
   .c-news__title {
     font-size: 2rem;
     margin-bottom: 6vw;
   }
-  .c-news__list {
-    padding-bottom: 0;
-  }
-  .c-news__list a {
-    padding: 4vw 0 4vw 3vw;
-  }
-  .c-news-sl {
-    padding: 10vw 0 0 0;
-  }
   .c-news-sl .c-container {
-    padding: 0 12vw;
+    padding: 5vw 12vw;
   }
   .c-news-sl__tit p {
     font-size: 1.6rem;
@@ -2852,11 +2982,8 @@ Stylesheet: 960px以上のモニタで適用
   .c-news-sl__date {
     font-size: 1.6rem;
   }
-  .c-news-sl__list {
-    padding: 20vw 0 6vw 0;
-  }
   .c-news-sl__contents {
-    padding: 10vw 0;
+    padding: 5vw 0;
   }
   .c-news-sl__contents p {
     font-size: 1.2rem;
@@ -2921,10 +3048,6 @@ Stylesheet: 1200px以上のモニタで適用
   .p-footer__sns {
     margin-bottom: 5vw;
   }
-  .c-news {
-    padding-top: 15vw;
-    padding-bottom: 3vw;
-  }
   .c-news__title {
     margin-bottom: 5vw !important;
   }
@@ -2935,26 +3058,7 @@ Stylesheet: 1200px以上のモニタで適用
     padding: 2.5vw 0 2.5vw 5vw;
   }
   .c-news-sl .c-container {
-    padding: 0 12vw;
-  }
-  .c-news-sl__list {
-    padding-top: 6vw;
-  }
-  .c-news-sl__contents {
-    padding: 8vw 0 0 0;
-  }
-  .c-staff {
-    padding: 5vw 0;
-  }
-  .c-staff__title p {
-    margin-top: 5vw;
-  }
-  .c-staff .sns-link span::before {
-    top: 0px;
-    right: 10px;
-  }
-  .c-recruite {
-    padding: 10vw 0 5vw 0;
+    padding: 5vw 12vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

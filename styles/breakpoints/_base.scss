@@ -5,6 +5,10 @@ body {
   text-transform: uppercase;
   font-family: "Josefin Sans", sans-serif;
   font-family: "Noto Serif JP", serif;
+
+  &.hidden {
+    overflow: hidden;
+  }
 }
 
 .superwrapper {
@@ -141,7 +145,7 @@ dd {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(/images/common/icon-insta-gr.png);
+    background-image: url(../images/common/icon-insta-gr.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -187,6 +191,18 @@ dd {
       background-repeat: no-repeat;
       background-size: contain;
     }
+  }
+}
+
+.c-top-view {
+  height: 25vh;
+
+  @media (min-width:600px) {
+    height: 30vh;
+  }
+
+  @media (min-width:1200px) {
+    height: 30vh;
   }
 }
 
@@ -585,13 +601,13 @@ dd {
 
 //* * * * * * * * * staff-page * * * * * * * * * *
 .c-staff {
-  padding: 15vw 0;
+  padding: 0 0 15vw 0;
   letter-spacing: 3px;
   line-height: 2;
 
   &__title {
     & span {
-      padding-top: 8vw;
+      padding-top: 4vw;
       text-align: center;
       font-weight: 100;
       font-size: 2rem;
@@ -599,7 +615,7 @@ dd {
     }
 
     & p {
-      margin-top: 10vw;
+      margin-top: 4vw;
       font-size: 0.5rem;
       line-height: 2;
     }
@@ -610,7 +626,7 @@ dd {
   }
 
   &__list {
-    margin-top: 10vw;
+    margin-top: 5vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -661,13 +677,13 @@ dd {
 
 //* * * * * * * * * recruite-page * * * * * * * * * *
 .c-recruite {
-  padding: 15vw 0;
+  padding: 0 0 10vw 0;
   letter-spacing: 3px;
   line-height: 2;
 
   &__title {
     & span {
-      padding-top: 8vw;
+      padding-top: 4vw;
       text-align: center;
       font-weight: 100;
       font-size: 1.8rem;
@@ -676,10 +692,14 @@ dd {
     }
 
     & p {
-      margin-top: 10vw;
+      margin-top: 4vw;
       font-size: 0.5rem;
       line-height: 2;
     }
+  }
+
+  &__subtitle {
+    font-size: 1rem;
   }
 
   &__list {
@@ -690,10 +710,14 @@ dd {
     justify-content: space-between;
   }
 
+  &__item {
+    margin-bottom: 20px;
+  }
+
   &__btn {
+    margin-top: 20px;
     text-align: right;
     letter-spacing: 2px;
-    line-height: 1.5;
     font-size: 0.7rem;
 
     & span {
@@ -730,7 +754,7 @@ dd {
 
 //* * * * * * news-page * * * * * * *
 .c-news {
-  padding: 30vw 0 10vw 0;
+  padding: 6vw 0 5vw 0;
   letter-spacing: 3px;
 
   &__link {
@@ -753,10 +777,6 @@ dd {
     &:first-child {
       border-top: 1px solid rgb(235, 235, 235);
     }
-  }
-
-  &__list {
-    padding-bottom: 5vw;
   }
 
   .page-numbers {
@@ -831,7 +851,7 @@ dd {
 
   &__title {
     text-align: center;
-    margin-bottom: 10vw;
+    margin-bottom: 6vw;
     letter-spacing: 2px;
     font-weight: 100;
   }
@@ -843,18 +863,13 @@ dd {
 
 //* * * * * * news-single-page * * * * * * *
 .c-news-sl {
-  padding: 20vw 0 10vw 0;
 
   & .c-container {
-    padding: 5vw 5vw 0 5vw;
+    padding: 10vw 5vw;
   }
 
   &__date {
     color: $cGray;
-  }
-
-  &__list {
-    padding: 15vw 0 0 0;
   }
 
   &__contents {
@@ -867,7 +882,6 @@ dd {
   }
 
   &__link {
-    margin: 0 0 10vw 0;
     text-align: right;
     font-size: 1rem;
     letter-spacing: 2px;

@@ -56,16 +56,30 @@
         </nav>
       </div>
       <!-- /.pc-container -->
-      <nav class="sp-navbtn">
-        <ul class="sp-navbtn__container">
-          <li><a href="tel:092-686-7954"><i class="icon-tel"></i></a></li>
-          <li><a target="_blank" href="https://beauty.hotpepper.jp/"><i class="icon-net"></i></a></li>
-          <li><a href="https://goo.gl/maps/CyWuFwBDtuB9U6Ld7" target="_blank"><i class="icon-map"></i></a></li>
-        </ul>
-      </nav>
-      <!-- /.nav-btn -->
+       <div class="reserve-btn-js">
+        <div class="reserve-btn-js__inner">
+          <div class="reserve-btn-js__01">
+            <span>ご</span>
+            <span>予</span>
+            <span>約</span>
+          </div>
+          <div class="reserve-btn-js__02 js-left">
+            <div class="tel">
+              <a href="tel:092-686-7954">電話予約</a>
+            </div>
+            <div class="net">
+              <a target="_blank" href="https://beauty.hotpepper.jp/">オンライン予約</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.reserve-btn -->
     </header>
     <!-- /.header -->
+    <div class="c-top-view">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/home/counseling__2.jpg" alt="">
+    </div>
+    <!-- /.c-top-view -->
     <main class="c-recruite">
       <div class="c-container">
         <div class="c-recruite-wrapper">

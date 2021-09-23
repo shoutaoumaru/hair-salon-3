@@ -139,14 +139,24 @@
         </nav>
       </div>
       <!-- /.pc-container -->
-      <nav class="sp-navbtn">
-        <ul class="sp-navbtn__container">
-          <li><a href="tel:092-686-7954"><i class="icon-tel"></i></a></li>
-          <li><a target="_blank" href="https://beauty.hotpepper.jp/"><i class="icon-net"></i></a></li>
-          <li><a href="https://goo.gl/maps/CyWuFwBDtuB9U6Ld7" target="_blank"><i class="icon-map"></i></a></li>
-        </ul>
-      </nav>
-      <!-- /.nav-btn -->
+       <div class="reserve-btn-js">
+        <div class="reserve-btn-js__inner">
+          <div class="reserve-btn-js__01">
+            <span>ご</span>
+            <span>予</span>
+            <span>約</span>
+          </div>
+          <div class="reserve-btn-js__02 js-left">
+            <div class="tel">
+              <a href="tel:092-686-7954">電話予約</a>
+            </div>
+            <div class="net">
+              <a target="_blank" href="https://beauty.hotpepper.jp/">オンライン予約</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.reserve-btn -->
     </header>
     <!-- /.header -->
     <!-- .p-firstview -->
@@ -473,24 +483,15 @@
         </h2>
         <div class="p-news__wrapper appear up">
           <ul class="p-news__list item">
+          <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
             <li class="p-news__item">
-              <a class="p-news__link" href="">
-                <span>2021/05/25</span>
-                <p>営業時間短縮営業について</p>
+              <a class="p-news__link animsition-link" href="<?php the_permalink(); ?>">
+                <span class="c-txt-sm"><?php echo get_the_date('Y.m.d'); ?></span>
+                <p class="c-txt-sm"><?php the_title(); ?></p>
               </a>
             </li>
-            <li class="p-news__item">
-              <a class="p-news__link" href="">
-                <span>2021/05/25</span>
-                <p>新型コロナウィルス感染拡大について</p>
-              </a>
-            </li>
-            <li class="p-news__item">
-              <a class="p-news__link" href="">
-                <span>2021/05/25</span>
-                <p>ホームページリニューアル致しました</p>
-              </a>
-            </li>
+            <?php endwhile; ?>
+            <?php endif; ?>
           </ul>
           <div class="view-more item">
             <a class="view-more__link animsition-link" href="/news">
