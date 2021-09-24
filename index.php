@@ -212,35 +212,7 @@
         <h2 class="p-gallery__title clip-js left">
           <p class="c-txt-lr">PHOTO GALLERY</p>
         </h2>
-        <ul class="p-gallery__list appear up">
-          <li class="p-gallery__item item">
-            <a href="/images/home/style_2.jpg" data-lightbox="group"><img src="<?php echo get_template_directory_uri(); ?>/images/home/style_2.jpg" /></a>
-          </li>
-          <li class="p-gallery__item item">
-            <a href="/images/home/style__1.jpg" data-lightbox="group"><img src="<?php echo get_template_directory_uri(); ?>/images/home/style__1.jpg" /></a>
-          </li>
-          <li class="p-gallery__item item">
-            <a href="/images/home/style__2.jpg" data-lightbox="group"><img src="<?php echo get_template_directory_uri(); ?>/images/home/style__2.jpg" /></a>
-          </li>
-          <li class="p-gallery__item item">
-            <a href="/images/home/style_5@pc.jpg" data-lightbox="group"><img src="<?php echo get_template_directory_uri(); ?>/images/home/style_5@pc.jpg" /></a>
-          </li>
-          <li class="p-gallery__item item">
-            <a href="/images/home/style_6.jpg" data-lightbox="group"><img src="<?php echo get_template_directory_uri(); ?>/images/home/style_6.jpg" /></a>
-          </li>
-          <li class="p-gallery__item item">
-            <a href="/images/home/style_7@pc.jpg" data-lightbox="group"><img src="<?php echo get_template_directory_uri(); ?>/images/home/style_11.jpg" /></a>
-          </li>
-          <li class="p-gallery__item item">
-            <a href="/images/home/style_8.jpg" data-lightbox="group"><img src="<?php echo get_template_directory_uri(); ?>/images/home/style_8.jpg" /></a>
-          </li>
-          <li class="p-gallery__item item">
-            <a href="/images/home/style_9.jpg" data-lightbox="group"><img src="<?php echo get_template_directory_uri(); ?>/images/home/style_9.jpg" /></a>
-          </li>
-          <li class="p-gallery__item item">
-            <a href="/images/home/style_10.jpg" data-lightbox="group"><img src="<?php echo get_template_directory_uri(); ?>/images/home/style_10.jpg" /></a>
-          </li>
-        </ul>
+        <?php echo apply_filters('the_content', '[instagram-feed]'); ?>
         <div class="insta-link">
           <a href="https://www.instagram.com/" class="insta-link-btn" target="_blank">
             <span>follow us</span></a>

@@ -257,6 +257,26 @@ dd {
   }
 }
 
+//インスタセクション
+#sb_instagram {
+  .sb_instagram_header {
+    display: none;
+  }
+
+  #sbi {
+    &_images {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .sbi_item {
+        width: 25% !important;
+      }
+    }
+  }
+}
+
+
 //スタッフ
 .p-staff {
   background: #f1efea;
