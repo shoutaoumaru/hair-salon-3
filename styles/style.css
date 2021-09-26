@@ -2605,6 +2605,250 @@ dd {
   border-bottom: 1px solid #727272;
 }
 
+.c-contact-text {
+  margin-bottom: 30px;
+}
+
+.c-contact .contact-form {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.c-contact .contact-form h1 {
+  display: block;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.c-contact .contact-form input,
+.c-contact .contact-form textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #a0a0a0;
+  margin: 12px 0 20px 0;
+}
+
+.c-contact .contact-form textarea {
+  margin-bottom: 0;
+}
+
+.c-contact .contact-form input {
+  height: 45px;
+}
+
+.c-contact .contact-form label {
+  text-align: left;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.c-contact .contact-form .must {
+  background-color: red;
+  border-radius: 10px;
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.c-contact .contact-form .free {
+  background-color: #4245ce;
+  border-radius: 10px;
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.c-contact .contact-form .wpcf7 form.invalid .wpcf7-response-output {
+  border: 1px solid red;
+}
+
+.c-contact .contact-form .wpcf7-acceptance input {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.c-contact .contact-form .ms-1 {
+  color: #2180da;
+  border-bottom: 1px solid #2180da;
+}
+
+.c-contact .contact-form .submit-btn {
+  text-align: center;
+}
+
+.c-contact .contact-form .submit-btn input:disabled {
+  border-color: #a0a0a0;
+}
+
+.c-contact .contact-form .submit-btn input {
+  border-color: #2b2b2b;
+  width: 70%;
+  max-width: 320px;
+}
+
+.c-contact .contact-form .ajax-loader {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .c-contact .contact-form .c-contact-text {
+    font-size: 18px;
+  }
+  .c-contact .contact-form input {
+    height: 55px;
+  }
+  .c-contact .contact-form input,
+  .c-contact .contact-form textarea {
+    margin: 24px 0 30px 0;
+  }
+  .c-contact .contact-form label {
+    font-size: 20px;
+    width: 540px;
+  }
+  .c-contact .contact-form .submit-btn input {
+    width: 70%;
+    max-width: 320px;
+    height: 64px;
+    font-size: 20px;
+  }
+  .c-contact .contact-form .wpcf7-acceptance input {
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+  }
+  .c-contact .contact-form .ms-1 {
+    font-size: 18px;
+  }
+}
+
+.c-contact .grecaptcha-badge {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  width: 100% !important;
+}
+
+.c-contact .grecaptcha-badge iframe {
+  -webkit-box-shadow: grey 0px 0px 5px;
+          box-shadow: grey 0px 0px 5px;
+}
+
+.c-privacy {
+  margin-top: 100px;
+}
+
+.c-privacy .c-title {
+  text-align: center;
+  font-size: 26px;
+  display: block;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.c-privacy h3 {
+  margin-bottom: 20px;
+}
+
+.c-privacy-item {
+  margin-bottom: 30px;
+}
+
+.c-privacy-btn {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 20px;
+}
+
+.c-privacy-btn a {
+  position: relative;
+  border: 1px solid #2b2b2b;
+  padding: 15px 30px;
+  border-radius: 5px;
+  background-color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  letter-spacing: 2px;
+}
+
+.c-privacy-btn a:hover {
+  letter-spacing: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c-privacy-btn a::after {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  background-image: url(../images/common/arrow.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.c-thanks {
+  margin-top: 100px;
+}
+
+.c-thanks .c-title {
+  text-align: center;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.c-thanks h3 {
+  margin-bottom: 20px;
+}
+
+.c-thanks-item {
+  margin-bottom: 30px;
+}
+
+.c-thanks-btn {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 18px;
+}
+
+.c-thanks-btn a {
+  position: relative;
+  border: 1px solid #2b2b2b;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  letter-spacing: 2px;
+}
+
+.c-thanks-btn a:hover {
+  letter-spacing: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c-thanks-btn a::after {
+  position: absolute;
+  top: 0;
+  right: 7px;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background-image: url(../images/common/arrow.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 @media (min-width: 600px) {
   /******************************************************************
 

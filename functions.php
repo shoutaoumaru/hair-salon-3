@@ -33,3 +33,22 @@ function the_pagination() {
   ) );
   echo '</nav>';
   }
+//お問い合わせと送信完了（固定ページ）のスラッグをセットする
+$contact = 'contact';
+$thanks = 'thanks';
+
+//お問い合わせフォームの送信後にサンクスページへ飛ばす
+add_action( 'wp_footer', 'redirect_thanks_page' );
+function redirect_thanks_page() {
+  global $contact;
+  global $thanks;
+
+  if( is_page($contact)  ) {
+  ?>
+  <script>
+    document.addEventListener( 'wpcf7mailsent', function( event ) {
+      location = '<?php echo home_url('/'.$thanks); ?>'; // 遷移先のURL
+    }, false );
+  </script>
+  <?php }
+}
