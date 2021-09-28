@@ -206,11 +206,11 @@
         </div>
       </div>
     </section>
-    <!-- .p-gallery -->
-    <section id="gallery" class="p-gallery">
+    <!-- .p-instagram -->
+    <section id="instagram" class="p-instagram">
       <div class="c-container">
-        <h2 class="p-gallery__title clip-js left">
-          <p class="c-txt-lr">PHOTO GALLERY</p>
+        <h2 class="p-instagram__title clip-js left">
+          <p class="c-txt-lr">INSTAGRAM</p>
         </h2>
         <?php echo apply_filters('the_content', '[instagram-feed]'); ?>
         <div class="insta-link">

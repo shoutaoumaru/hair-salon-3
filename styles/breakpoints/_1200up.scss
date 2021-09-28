@@ -3,28 +3,6 @@
 Stylesheet: 1200px以上のモニタで適用
 
 ******************************************************************/
-.insta-link {
-  margin-left: 140px;
-
-  & span {
-    padding-left: 42px;
-    padding-right: 24px;
-    font-size: 30px;
-
-    &::before {
-      top: 12px;
-      left: 0;
-      height: 26px;
-      width: 26px;
-    }
-
-    &::after {
-      top: 20px;
-      height: 14px;
-      width: 14px;
-    }
-  }
-}
 
 //.p-first-view
 .p-firstview {
@@ -32,13 +10,6 @@ Stylesheet: 1200px以上のモニタで適用
     .view-sp {
       display: none;
     }
-  }
-}
-
-//.p-gallery
-.p-gallery {
-  &__item {
-    height: 240px;
   }
 }
 

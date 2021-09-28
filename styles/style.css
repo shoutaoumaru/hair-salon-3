@@ -1823,8 +1823,8 @@ dd {
 }
 
 .insta-link {
-  margin-top: 40px;
   text-align: right;
+  margin-bottom: 10px;
 }
 
 .insta-link span {
@@ -1833,7 +1833,8 @@ dd {
   padding-left: 25px;
   padding-right: 15px;
   border-bottom: 1px solid #5a5a5a;
-  font-size: 16px;
+  font-size: 14px;
+  color: #5a5a5a;
 }
 
 .insta-link span::before {
@@ -1842,8 +1843,10 @@ dd {
   position: absolute;
   top: 0;
   left: 0;
-  height: 20px;
-  width: 20px;
+  bottom: 0;
+  margin: auto;
+  height: 18px;
+  width: 18px;
   background-image: url(../images/common/icon-insta-gr.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -1853,8 +1856,10 @@ dd {
   content: "";
   display: inline-block;
   position: absolute;
-  top: 10px;
+  top: 0;
   right: 0;
+  bottom: 0;
+  margin: auto;
   height: 8px;
   width: 8px;
   background-image: url(../images/common/arrow.png);
@@ -1903,32 +1908,6 @@ dd {
 
 .p-concept__title {
   padding-bottom: 10vw;
-}
-
-.p-gallery {
-  background-color: #fafafa;
-  padding: 15vw 0;
-}
-
-.p-gallery__title {
-  margin-bottom: 40px;
-}
-
-.p-gallery__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.p-gallery__item {
-  width: 33.3%;
-  height: 100px;
-  border: white 2px solid;
 }
 
 #sb_instagram .sb_instagram_header {
@@ -2864,26 +2843,6 @@ Stylesheet: 600px以上のモニタで適用
   .reserve-btn-js {
     display: none;
   }
-  .insta-link {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .insta-link span {
-    padding-left: 35px;
-    padding-right: 20px;
-    font-size: 24px;
-  }
-  .insta-link span::before {
-    top: 5px;
-    left: 0;
-    height: 24px;
-    width: 24px;
-  }
-  .insta-link span::after {
-    top: 15px;
-    height: 12px;
-    width: 12px;
-  }
   .header .mobile-container {
     height: 74px;
   }
@@ -2906,12 +2865,6 @@ Stylesheet: 600px以上のモニタで適用
   }
   .p-concept {
     padding: 10vw 0;
-  }
-  .p-gallery {
-    padding: 5vw 0;
-  }
-  .p-gallery__item {
-    height: 150px;
   }
   .p-price {
     padding: 20vw 0 15vw 0;
@@ -3067,25 +3020,6 @@ Stylesheet: 960px以上のモニタで適用
   .view-more span {
     font-size: 1.4rem;
   }
-  .insta-link {
-    margin-top: 70px;
-  }
-  .insta-link span {
-    padding-left: 40px;
-    padding-right: 25px;
-    font-size: 28px;
-  }
-  .insta-link span::before {
-    top: 8px;
-    left: 0;
-    height: 26px;
-    width: 26px;
-  }
-  .insta-link span::after {
-    top: 17px;
-    height: 14px;
-    width: 14px;
-  }
   .header .logo__img {
     margin-left: 50px;
   }
@@ -3112,9 +3046,6 @@ Stylesheet: 960px以上のモニタで適用
   }
   .p-firstview .swiper-container {
     height: 100vh;
-  }
-  .p-gallery__item {
-    height: 200px;
   }
   .p-price__section {
     font-size: 1.1rem;
@@ -3262,30 +3193,8 @@ Stylesheet: 960px以上のモニタで適用
 Stylesheet: 1200px以上のモニタで適用
 
 ******************************************************************/
-  .insta-link {
-    margin-left: 140px;
-  }
-  .insta-link span {
-    padding-left: 42px;
-    padding-right: 24px;
-    font-size: 30px;
-  }
-  .insta-link span::before {
-    top: 12px;
-    left: 0;
-    height: 26px;
-    width: 26px;
-  }
-  .insta-link span::after {
-    top: 20px;
-    height: 14px;
-    width: 14px;
-  }
   .p-firstview .swiper-container .view-sp {
     display: none;
-  }
-  .p-gallery__item {
-    height: 240px;
   }
   .p-price {
     padding-bottom: 0;

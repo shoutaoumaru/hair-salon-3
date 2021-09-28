@@ -44,29 +44,6 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-.insta-link {
-  margin-top: 70px;
-
-  & span {
-    padding-left: 40px;
-    padding-right: 25px;
-    font-size: 28px;
-
-    &::before {
-      top: 8px;
-      left: 0;
-      height: 26px;
-      width: 26px;
-    }
-
-    &::after {
-      top: 17px;
-      height: 14px;
-      width: 14px;
-    }
-  }
-}
-
 //.header
 .header {
   & .logo__img {
@@ -102,13 +79,6 @@ Stylesheet: 960px以上のモニタで適用
 .p-firstview {
   & .swiper-container {
     height: 100vh;
-  }
-}
-
-//.p-gallery
-.p-gallery {
-  &__item {
-    height: 200px;
   }
 }
 

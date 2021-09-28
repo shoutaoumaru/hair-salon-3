@@ -155,8 +155,8 @@ dd {
 }
 
 .insta-link {
-  margin-top: 40px;
   text-align: right;
+  margin-bottom: 10px;
 
   & span {
     position: relative;
@@ -164,7 +164,8 @@ dd {
     padding-left: 25px;
     padding-right: 15px;
     border-bottom: 1px solid $cSubBlack;
-    font-size: 16px;
+    font-size: 14px;
+    color: $cSubBlack;
 
     &::before {
       content: "";
@@ -172,8 +173,10 @@ dd {
       position: absolute;
       top: 0;
       left: 0;
-      height: 20px;
-      width: 20px;
+      bottom: 0;
+      margin: auto;
+      height: 18px;
+      width: 18px;
       background-image: url(../images/common/icon-insta-gr.png);
       background-repeat: no-repeat;
       background-size: contain;
@@ -183,8 +186,10 @@ dd {
       content: "";
       display: inline-block;
       position: absolute;
-      top: 10px;
+      top: 0;
       right: 0;
+      bottom: 0;
+      margin: auto;
       height: 8px;
       width: 8px;
       background-image: url(../images/common/arrow.png);
@@ -232,28 +237,6 @@ dd {
 
   &__title {
     padding-bottom: 10vw;
-  }
-}
-
-// フォトギャラリーセクション
-.p-gallery {
-  background-color: rgb(250, 250, 250);
-  padding: 15vw 0;
-
-  &__title {
-    margin-bottom: 40px;
-  }
-
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  &__item {
-    width: 33.3%;
-    height: 100px;
-    border: white 2px solid;
   }
 }
 
