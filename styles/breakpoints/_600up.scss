@@ -16,30 +16,6 @@ Stylesheet: 600px以上のモニタで適用
   display: none;
 }
 
-.insta-link {
-  margin-top: 50px;
-  margin-bottom: 50px;
-
-  & span {
-    padding-left: 35px;
-    padding-right: 20px;
-    font-size: 24px;
-
-    &::before {
-      top: 5px;
-      left: 0;
-      height: 24px;
-      width: 24px;
-    }
-
-    &::after {
-      top: 15px;
-      height: 12px;
-      width: 12px;
-    }
-  }
-}
-
 //.header
 .header {
   & .mobile-container {
@@ -75,15 +51,6 @@ Stylesheet: 600px以上のモニタで適用
 //.p-concept
 .p-concept {
   padding: 10vw 0;
-}
-
-//.p-gallery
-.p-gallery {
-  padding: 5vw 0;
-
-  &__item {
-    height: 150px;
-  }
 }
 
 //.p-price
