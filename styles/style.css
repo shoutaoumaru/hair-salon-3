@@ -2590,6 +2590,7 @@ dd {
 .c-contact .contact-form {
   margin-bottom: 40px;
   text-align: center;
+  background-color: #f4f5f7;
 }
 
 .c-contact .contact-form h1 {
@@ -2601,9 +2602,8 @@ dd {
 .c-contact .contact-form input,
 .c-contact .contact-form textarea {
   width: 100%;
-  border-radius: 5px;
-  border: 1px solid #a0a0a0;
-  margin: 12px 0 20px 0;
+  border: 1px solid #2b2b2b;
+  margin: 5px 0 20px 0;
 }
 
 .c-contact .contact-form textarea {
@@ -2614,26 +2614,87 @@ dd {
   height: 45px;
 }
 
-.c-contact .contact-form label {
+.c-contact .contact-form select {
+  width: 130px;
+  height: 45px;
+  border: 1px solid #2b2b2b;
+}
+
+.c-contact .contact-form dl {
   text-align: left;
-  font-weight: bold;
-  font-size: 16px;
+  display: inline-block;
+  width: 280px;
+  padding-bottom: 20px;
+}
+
+.c-contact .contact-form dt {
+  font-size: 14px;
 }
 
 .c-contact .contact-form .must {
-  background-color: red;
-  border-radius: 10px;
-  color: #fff;
-  padding: 5px 10px;
+  position: relative;
+  padding: 5px 15px 5px 0;
   margin-right: 10px;
 }
 
+.c-contact .contact-form .must::after {
+  content: '*';
+  font-size: 14px;
+  color: #1d649e;
+}
+
 .c-contact .contact-form .free {
-  background-color: #4245ce;
-  border-radius: 10px;
-  color: #fff;
-  padding: 5px 10px;
+  padding: 5px 15px 5px 0;
   margin-right: 10px;
+}
+
+.c-contact .contact-form .ct-request select {
+  width: 100%;
+}
+
+.c-contact .contact-form .ct-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 280px;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.c-contact .contact-form .ct-sex {
+  display: inline-block;
+  text-align: left;
+}
+
+.c-contact .contact-form .ct-sex input {
+  margin: 0;
+}
+
+.c-contact .contact-form .ct-sex select {
+  height: 45px;
+}
+
+.c-contact .contact-form .ct-age {
+  display: inline-block;
+  text-align: left;
+}
+
+.c-contact .contact-form .ct-date {
+  text-align: left;
+  font-size: 14px;
+}
+
+.c-contact .contact-form .ct-date input {
+  margin-top: 0;
+  width: 130px;
+}
+
+.c-contact .contact-form .ct-time {
+  text-align: left;
 }
 
 .c-contact .contact-form .wpcf7 form.invalid .wpcf7-response-output {
@@ -2669,20 +2730,28 @@ dd {
   display: none;
 }
 
-@media (min-width: 768px) {
+.c-contact .contact-form .wpcf7-spinner {
+  display: none;
+}
+
+@media (min-width: 600px) {
   .c-contact .contact-form .c-contact-text {
     font-size: 18px;
   }
-  .c-contact .contact-form input {
-    height: 55px;
-  }
-  .c-contact .contact-form input,
-  .c-contact .contact-form textarea {
-    margin: 24px 0 30px 0;
-  }
-  .c-contact .contact-form label {
+  .c-contact .contact-form dt {
     font-size: 20px;
+  }
+  .c-contact .contact-form dl {
     width: 540px;
+  }
+  .c-contact .contact-form .ct-date input {
+    width: 250px;
+  }
+  .c-contact .contact-form .ct-flex {
+    width: 540px;
+  }
+  .c-contact .contact-form select {
+    width: 250px;
   }
   .c-contact .contact-form .submit-btn input {
     width: 70%;
